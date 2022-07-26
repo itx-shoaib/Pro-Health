@@ -14,6 +14,14 @@ body{
 .collapse.navbar-collapse{
     text-align: center;
 }
+.indicatorbtn:focus{
+    background-color: goldenrod !important;
+}
+
+.car-ind{
+    right: 60% !important;
+    bottom: 8%;
+}
 
 .text-right{
     text-align: right;
@@ -278,13 +286,7 @@ body{
         
     }
 
-    .indicatorbtn:focus{
-        background: goldenrod !important;
-    }
 
-    .car-ind{
-        left: 0 !important;
-    }
 
     .navbar-toggler {
         background-color: white !important;

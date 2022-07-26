@@ -45,7 +45,7 @@ body {
 
 .labeldivstyle {
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 140px;
     margin-left: 70px;
     width: 50%;
 }
@@ -86,6 +86,10 @@ body {
 
 .scrolloff {
     overflow-x: hidden !important;
+}
+
+.divsize{
+    height: 70vh !important;
 }
 
 .HeadThree {
@@ -283,6 +287,7 @@ body {
     .labeldivstyle {
         width: 80%;
         margin-left: 15px;
+        
     }
 
     .labelstyle {
