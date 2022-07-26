@@ -1,4 +1,5 @@
 import React from 'react'
+import '../css/Project.css';
 import Footer from './Footer'
 import Navbar from './Navbar'
 
@@ -18,14 +19,14 @@ const Project = () => {
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item carouselitems active">
                     <img src="https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000"
                         class="d-block w-100 imgresponsive" alt="..." />
                     <div class="carousel-caption d-md-block ImgBodyAlignment">
                         <h1 class="carouselsubtitle">Image 1</h1>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item carouselitems">
                     <img src="https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000"
                         class="d-block w-100 imgresponsive" alt="..." />
                     <div class="carousel-caption d-md-block ImgBodyAlignment">
@@ -33,7 +34,7 @@ const Project = () => {
 
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item carouselitems">
                     <img src="https://img.freepik.com/premium-photo/black-stone-texture-dark-slate-background-top-view_88281-1206.jpg?w=2000"
                         class="d-block w-100 imgresponsive" alt="..." />
                     <div class="carousel-caption d-md-block ImgBodyAlignment">

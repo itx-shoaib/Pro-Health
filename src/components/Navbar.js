@@ -1,12 +1,24 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { Link } from "react-router-dom";
 import logo from '../Logo.png';
 import '../css/HomePage.css'
 
 const Navbar = () => {
+    const [navbar, setnavbar] = useState(false);
+
+    const changebackground = ()=>{
+        if(window.scrollY >= 200){
+            setnavbar(true);
+        }
+        else{
+            setnavbar(false)
+        }
+    };
+
+    window.addEventListener('scroll',changebackground)
     return (
-        <div>
-            <nav className="navbar navbar-light bg-light navbar-expand-lg">
+        <div className='sticky-top'>
+            <nav className={navbar ? 'navbar active navbar-light bg-light navbar-expand-lg' : 'navbar navbar-light bg-light navbar-expand-lg'}>
                 <div className="container-fluid">
                     <img className="navbar-brand imgsizing" alt='...' src={logo} />
                     <button

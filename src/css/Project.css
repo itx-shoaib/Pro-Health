@@ -1,21 +1,22 @@
-body{
+body {
     background-color: #262626;
+    overflow-x: hidden;
 }
 
-#ml-auto{
+#ml-auto {
     margin-left: auto;
 }
 
-.navbar-collapse.collapsing{ 
-    background: rgba(40,40,40,0.95);
+.navbar-collapse.collapsing {
+    background: rgba(40, 40, 40, 0.95);
     text-align: center;
 }
 
-.collapse.navbar-collapse{
+.collapse.navbar-collapse {
     text-align: center;
 }
 
-.text-right{
+.text-right {
     text-align: right;
 }
 
@@ -30,24 +31,30 @@ body{
 }
 
 .navbar {
-    display: flex;
-    position: sticky;
+    position: absolute;
     z-index: 10;
     width: 100%;
-    background: transparent;
-    top: 0;
+    background: transparent !important;
 }
 
-
-.navbar.active{
-    background: #262626 !important;
-}
-
-.ImgBodyAlignment{
-    top: 30%;
-    right: 50%;
+.ImgBodyAlignment {
+    top: 40%;
+    right: 60%;
     text-align: start;
 }
+
+.labeldivstyle {
+    padding: 30px;
+    margin-top: 40px;
+    margin-left: 70px;
+    width: 50%;
+}
+
+.labelstyle {
+    font-size: 3rem;
+    color: white;
+}
+
 .nav-link {
     color: white !important;
     font-weight: bold;
@@ -67,7 +74,7 @@ body{
     color: #DDD;
     font-size: 48px;
     font-weight: bold;
-    margin-top: 150px;
+    margin-top: 170px;
 }
 
 .HeadTwo {
@@ -83,12 +90,14 @@ body{
 
 .HeadThree {
     margin-bottom: 20px;
-    color: #CCC;
 }
 
 .HeadFour {
     margin-bottom: 20px;
-    color: #CCC;
+}
+
+.imgresponsive {
+    height: 70vh;
 }
 
 .SpecHeadOne {
@@ -109,6 +118,7 @@ body{
 }
 
 .ProjectHeadTwo {
+    margin-top: 5%;
     font-size: 26px;
     color: white;
 }
@@ -125,18 +135,24 @@ body{
     width: 100%;
     height: auto;
 }
-.carouseltitle{
-    font-size: 24px;
+
+.carouseltitle {
+    font-size: 20px;
 }
-.carouselsubtitle{
-    font-size: 56px;
+
+.carouselsubtitle {
+    font-size: 48px;
 }
-.btndark{
+
+.btndark {
     background-color: black;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 50px;
+}
+
+.carouselitems {
+    height: 70vh;
 }
 
 .overlay {
@@ -206,11 +222,13 @@ body{
 .fontfooterstyle:hover {
     color: goldenrod;
 }
-.hr{
-    color: #CCC;
-}
+
 .copyright {
     font-size: 16px;
+    color: #CCC;
+}
+
+.hr {
     color: #CCC;
 }
 
@@ -218,17 +236,29 @@ body{
     padding-top: 150px;
     padding-bottom: 150px;
 }
-
+.ServiceTitle{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.ServiceValue{
+    color: #CCC;
+    text-align: center;
+}
 
 @media (max-width: 992px) {
 
-    .collapse.navbar-collapse{
-        background: rgba(40,40,40,0.95);
+    .collapse.navbar-collapse {
+        background: rgba(40, 40, 40, 0.95);
         text-align: center;
     }
 }
 
-@media (max-width: 468px) {    
+@media (max-width: 468px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .copyright {
         margin: 20px;
@@ -236,6 +266,10 @@ body{
 
     .imgcontainer {
         margin-bottom: 20px;
+    }
+
+    .responsivepadding {
+        padding: 40px;
     }
 
     .mediaquery {
@@ -246,6 +280,16 @@ body{
         padding-left: 30px;
     }
 
+    .labeldivstyle {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    .labelstyle {
+        font-size: 2rem;
+        color: white;
+    }
+
     .mediaquerythree {
         padding: 30px;
         text-align: center;
@@ -254,9 +298,7 @@ body{
     .SpecHeadOne {
         margin-top: 30px;
     }
-.mediaqueryspec{
-    padding: 40px;
-}
+
     .ownersection {
         padding: 50px;
     }
@@ -269,30 +311,28 @@ body{
         padding-left: 0;
     }
 
-    .carouselitem {
-        height: 100vh !important;
+    .carousel-item {
+        height: 70vh;
     }
 
-    .imgresponsives {
-        height: 100vh;
-        
-    }
-
-    .indicatorbtn:focus{
-        background: goldenrod !important;
-    }
-
-    .car-ind{
-        left: 0 !important;
+    .imgresponsive {
+        height: 100%;
+        width: 100%;
     }
 
     .navbar-toggler {
         background-color: white !important;
     }
-    .carouselsubtitle{
+
+    .carouselsubtitle {
         font-size: 36px;
         margin-top: 20px;
         margin-bottom: 20px;
+    }
+
+    .HeadOne {
+        margin-top: 70px;
+
     }
     .imgsizing{
         margin-left: 0px;
